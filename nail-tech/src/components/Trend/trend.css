@@ -1,0 +1,35 @@
+.herosub{
+    padding: 2% 15%;
+}
+
+.herosub h1{
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.herotrend{
+    display: flex;
+    gap: 2rem;
+
+}
+
+.herotrend img{
+    width: 100%;
+    height: 450px;
+    border-radius: .3rem;
+}
+
+.trend1 p{
+    font-size: .8rem;
+    color: deeppink;
+}
+
+.trend2 p{
+    font-size: .8rem;
+    color: deeppink;
+}
+
+.trend3 p{
+    font-size: .8rem;
+    color: deeppink;
+}

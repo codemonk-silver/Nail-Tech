@@ -1,0 +1,21 @@
+.gallerysection{
+    padding: 2% 15%;
+}
+
+.gallerysection h1{
+    margin-bottom: 2rem;
+}
+
+.gallerycard{
+    display:grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: .5rem;
+    
+}
+
+.gallerycard img{
+    width: 100%;
+    height: 250px;
+    border-radius: .3rem;
+    object-fit: cover;
+}

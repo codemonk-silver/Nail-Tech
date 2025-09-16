@@ -1,0 +1,26 @@
+.aboutsection{
+    padding: 2% 15%;
+}
+
+.aboutsection p{
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.aboutbtn{
+    background: pink;
+    color: black;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    border: none;
+    font-weight: 700;
+}
+
+.aboutbtn:hover{
+    background: deeppink;
+    color: white;
+    padding: .5rem 1rem;
+    border-radius: .3rem;
+    border: none;
+    font-weight: 700;
+}

@@ -1,0 +1,31 @@
+.featuresection{
+    padding: 2% 15%;
+}
+
+.featurecard{
+    display: flex;
+    gap: 2rem;
+    margin-top: 2rem;
+
+}
+
+.featurecard img{
+    width: 100%;
+    height: 450px;
+    border-radius: .3rem;
+}
+
+.featurecard1 p{
+    font-size: .8rem;
+    color: deeppink;
+}
+
+.featurecard2 p{
+    font-size: .8rem;
+    color: deeppink;
+}
+
+.featurecard3 p{
+    font-size: .8rem;
+    color: deeppink;
+}

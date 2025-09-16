@@ -1,0 +1,60 @@
+.contactsection{
+    padding: 2% 15%;
+}
+
+.contactsection p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+form {
+display: flex;
+flex-direction: column;
+gap: 16px;
+}
+
+
+label {
+font-weight: 500;
+font-size: 0.9rem;
+margin-bottom: 4px;
+display: block;
+}
+
+
+input,
+textarea {
+width: 40%;
+padding: 12px;
+border: 1px solid rgb(247, 228, 231);
+border-radius: 8px;
+font-size: 0.95rem;
+background: rgb(247, 232, 235);
+}
+
+textarea {
+resize: vertical;
+min-height: 120px;
+}
+
+
+button {
+background: pink;
+color: black;
+border: 0;
+padding: 12px;
+font-size: 1rem;
+font-weight: 600;
+border-radius: 8px;
+cursor: pointer;
+transition: background 0.2s;
+margin-top: 2rem;
+}
+
+
+button:hover {
+background: deeppink;
+color: white;
+font-size: 600;
+}
