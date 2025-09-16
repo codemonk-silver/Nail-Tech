@@ -31,12 +31,46 @@
 }
 
 
+/* Tablet styles (768px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .featuresection {
+        padding: 2% 8%;
+        margin-top: 1.5rem;
+    }
+    .featuresection h1{
+        font-size: 1.4rem;
+    }
+
+    .featurecard {
+        gap: 1.5rem;
+        margin-top: 1.5rem;
+    }
+    
+    .featurecard img {
+        height: 380px;
+        object-fit: cover;
+    }
+    
+    .featurecard1 p,
+    .featurecard2 p,
+    .featurecard3 p {
+        font-size: .75rem;
+    }
+}
+
+
+
 /* Mobile Large styles (481px to 768px) */
 @media screen and (max-width: 768px) and (min-width: 481px) {
     .featuresection {
         padding: 2% 5%;
+        margin-top: 1.5rem;
     }
     
+    .featuresection h1{
+        font-size: 1.4rem;
+    }
+
     .featurecard {
         gap: 1rem;
         margin-top: 1.5rem;
@@ -44,13 +78,14 @@
     
     .featurecard img {
         height: 320px;
+        object-fit: cover;
     }
     
     .featurecard1 p,
     .featurecard2 p,
     .featurecard3 p {
         font-size: .7rem;
-        margin-top: .5rem;
+        margin-top: .1rem;
     }
 }
 
@@ -58,24 +93,37 @@
 @media screen and (max-width: 480px) {
     .featuresection {
         padding: 2% 3%;
+        margin-top: 1rem;
+    }
+
+    .featuresection h1{
+        font-size: 1.3rem;
+        text-align: center;
     }
     
     .featurecard {
         flex-direction: column;
         gap: 1.5rem;
-        margin-top: 1.2rem;
+        margin-top: 1rem;
     }
     
     .featurecard img {
+        width: 100%;
         height: 250px;
+        object-fit: cover;
+    }
+
+    .featurecard1 h4,
+    .featurecard2 h4,
+    .featurecard3 h4 {
+        font-size: .8rem;
     }
     
     .featurecard1 p,
     .featurecard2 p,
     .featurecard3 p {
-        font-size: .75rem;
-        margin-top: .3rem;
-        text-align: center;
+        font-size: .6rem;
+        margin-top: .1rem;
     }
 }
 
