@@ -9,10 +9,38 @@
     max-width: 100%;
 }
 
-.logo{
-    font-size: 1.7rem;
-    font-weight: bold;
-}
+.logo {
+          font-size: 1.7rem;
+          font-weight: bold;
+          background: linear-gradient(45deg, #ff006e, #8338ec, #3a86ff);
+          background-size: 200% 200%;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-clip: text;
+          animation: gradientShift 3s ease-in-out infinite;
+          cursor: pointer;
+          transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+          position: relative;
+        }
+
+        .logo:hover {
+          transform: scale(1.05) rotate(-1deg);
+        }
+
+        .logo::after {
+          content: '';
+          position: absolute;
+          bottom: -2px;
+          left: 0;
+          width: 0;
+          height: 2px;
+          background: linear-gradient(90deg, #ff006e, #8338ec);
+          transition: width 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .logo:hover::after {
+          width: 100%;
+        }
 
 /* Nav links (desktop) */
 .navlink{

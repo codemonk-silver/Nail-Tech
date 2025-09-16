@@ -1,17 +1,82 @@
+/* Hero Sub Section - Modern Animations */
 .herosub{
     padding: 2% 15%;
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.3s forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .herosub h1{
     font-size: 1.5rem;
     margin-bottom: 2rem;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: slideInFade 0.8s ease-out 0.6s forwards;
+    background: linear-gradient(45deg, #333, #666, #333);
+    background-size: 200% 200%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: slideInFade 0.8s ease-out 0.6s forwards, textShimmer 4s ease-in-out 1.5s infinite;
+    position: relative;
+}
+
+.herosub h1::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, deeppink, #ff1493);
+    animation: underlineExpand 0.8s ease-out 1.2s forwards;
+}
+
+@keyframes underlineExpand {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60px;
+  }
+}
+
+@keyframes slideInFade {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes textShimmer {
+  0%, 100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
 }
 
 .herotrend{
-    display:grid;
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: .5rem;
-
+    opacity: 0;
+    animation: fadeInUp 1s ease-out 0.8s forwards;
 }
 
 .herotrend img{
@@ -19,23 +84,252 @@
     height: 450px;
     border-radius: .3rem;
     object-fit: cover;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    filter: brightness(0.95);
 }
 
-.trend1 p{
+.trend1 {
+    opacity: 0;
+    animation: trendSlideIn 0.8s ease-out 1s forwards;
+}
+
+.trend2 {
+    opacity: 0;
+    animation: trendSlideIn 0.8s ease-out 1.2s forwards;
+}
+
+.trend3 {
+    opacity: 0;
+    animation: trendSlideIn 0.8s ease-out 1.4s forwards;
+}
+
+@keyframes trendSlideIn {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.trend1 img {
+    animation: imageReveal 0.8s ease-out 1.1s forwards;
+}
+
+.trend2 img {
+    animation: imageReveal 0.8s ease-out 1.3s forwards;
+}
+
+.trend3 img {
+    animation: imageReveal 0.8s ease-out 1.5s forwards;
+}
+
+@keyframes imageReveal {
+  0% {
+    opacity: 0;
+    transform: translateY(40px) scale(0.9);
+    filter: brightness(0.95);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: brightness(1);
+  }
+}
+
+.herotrend img:hover {
+    transform: translateY(-8px) scale(1.05);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25);
+    filter: brightness(1.1) saturate(1.1);
+}
+
+.trend1, .trend2, .trend3 {
+    position: relative;
+    overflow: hidden;
+    border-radius: .3rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.trend1:hover, .trend2:hover, .trend3:hover {
+    transform: translateY(-2px);
+}
+
+.trend1::before, .trend2::before, .trend3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(
+        135deg, 
+        rgba(255, 20, 147, 0.1), 
+        transparent 50%, 
+        rgba(255, 20, 147, 0.1)
+    );
+    opacity: 0;
+    transition: opacity 0.4s ease;
+    pointer-events: none;
+    z-index: 1;
+}
+
+.trend1:hover::before, .trend2:hover::before, .trend3:hover::before {
+    opacity: 1;
+}
+
+.trend1::after, .trend2::after, .trend3::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: linear-gradient(
+        45deg,
+        transparent,
+        rgba(255, 255, 255, 0.1),
+        transparent
+    );
+    transform: rotate(45deg) translate(-100%, -100%);
+    transition: transform 0.6s ease;
+    pointer-events: none;
+    z-index: 2;
+}
+
+.trend1:hover::after, .trend2:hover::after, .trend3:hover::after {
+    transform: rotate(45deg) translate(100%, 100%);
+}
+
+.trend1 p, .trend2 p, .trend3 p{
     font-size: .8rem;
     color: deeppink;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    margin-top: 0rem;
+    position: relative;
+    z-index: 3;
+    font-weight: 500;
 }
 
-.trend2 p{
-    font-size: .8rem;
-    color: deeppink;
+.trend1 p {
+    animation: textSlideUp 0.6s ease-out 1.4s forwards;
 }
 
-.trend3 p{
-    font-size: .8rem;
-    color: deeppink;
+.trend2 p {
+    animation: textSlideUp 0.6s ease-out 1.6s forwards;
 }
 
+.trend3 p {
+    animation: textSlideUp 0.6s ease-out 1.8s forwards;
+}
+
+@keyframes textSlideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.trend1 h4, .trend2 h4, .trend3 h4 {
+    opacity: 0;
+    transform: translateY(15px);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    z-index: 3;
+    margin-top: 0.5rem;
+    font-weight: 600;
+}
+
+.trend1 h4 {
+    animation: textSlideUp 0.6s ease-out 1.2s forwards;
+}
+
+.trend2 h4 {
+    animation: textSlideUp 0.6s ease-out 1.4s forwards;
+}
+
+.trend3 h4 {
+    animation: textSlideUp 0.6s ease-out 1.6s forwards;
+}
+
+/* Enhanced hover effects for trend items */
+.trend1:hover p, .trend2:hover p, .trend3:hover p {
+    color: #ff1493;
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(255, 20, 147, 0.3);
+}
+
+.trend1:hover h4, .trend2:hover h4, .trend3:hover h4 {
+    transform: translateY(-3px);
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Pulse animation for trend items */
+@keyframes trendPulse {
+  0% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+  50% {
+    box-shadow: 0 8px 30px rgba(255, 20, 147, 0.15);
+  }
+  100% {
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  }
+}
+
+.trend1 img, .trend2 img, .trend3 img {
+    animation-fill-mode: forwards;
+}
+
+.trend1 img {
+    animation: imageReveal 0.8s ease-out 1.1s forwards, trendPulse 3s ease-in-out 2.5s infinite;
+}
+
+.trend2 img {
+    animation: imageReveal 0.8s ease-out 1.3s forwards, trendPulse 3s ease-in-out 3s infinite;
+}
+
+.trend3 img {
+    animation: imageReveal 0.8s ease-out 1.5s forwards, trendPulse 3s ease-in-out 3.5s infinite;
+}
+
+/* Loading shimmer effect */
+@keyframes shimmerLoad {
+  0% {
+    background-position: -200px 0;
+  }
+  100% {
+    background-position: calc(200px + 100%) 0;
+  }
+}
+
+.herotrend img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        90deg,
+        transparent,
+        rgba(255, 255, 255, 0.4),
+        transparent
+    );
+    animation: shimmerLoad 2s infinite;
+    z-index: 1;
+}
 
 /* Tablet styles (768px to 1024px) */
 @media screen and (max-width: 1024px) and (min-width: 769px) {
@@ -51,7 +345,6 @@
     
     .herotrend {
         gap: 1.5rem;
-        
     }
     
     .herotrend img {
@@ -91,6 +384,11 @@
         font-size: .7rem;
         margin-top: .5rem;
     }
+    
+    /* Reduce animation delays for mobile */
+    .trend1, .trend2, .trend3 {
+        animation-delay: 0.8s, 0.9s, 1s;
+    }
 }
 
 /* Mobile Small styles (up to 480px) */
@@ -106,8 +404,14 @@
         margin-top: 1.5rem;
     }
     
+    .herosub h1::after {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+    }
+    
     .herotrend {
-        display:grid;
+        display: grid;
         grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
     }
@@ -128,7 +432,23 @@
     .trend3 p {
         font-size: .6rem;
         margin-top: .1rem;
-        
+    }
+    
+    /* Faster animations for mobile single column */
+    .trend1, .trend2, .trend3 {
+        animation: trendSlideIn 0.6s ease-out 0.8s forwards;
+    }
+    
+    .trend1 img, .trend2 img, .trend3 img {
+        animation: imageReveal 0.6s ease-out 0.9s forwards;
+    }
+    
+    .trend1 h4, .trend2 h4, .trend3 h4 {
+        animation: textSlideUp 0.5s ease-out 1s forwards;
+    }
+    
+    .trend1 p, .trend2 p, .trend3 p {
+        animation: textSlideUp 0.5s ease-out 1.1s forwards;
     }
 }
 
