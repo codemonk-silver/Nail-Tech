@@ -6,7 +6,7 @@ import tc from '../../assets/tc.jpg';
 
 const Trend = () => {
   return (
-    <div className='herosub'>
+    <div className='herosub' id='trendsub'>
                     <h1>Popular Nail Art Trends</h1>
                     <div className='herotrend'>
                       <div className='trend1'>

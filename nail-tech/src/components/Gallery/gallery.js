@@ -9,7 +9,7 @@ import f3 from '../../assets/f3.jpg';
 
 const Gallery = () => {
   return (
-    <div className='gallerysection'>
+    <div className='gallerysection' id='gallery'>
         <h1>Gallery</h1>
         <div className='gallerycard'>
             <img src={ta} alt='' />
