@@ -8,8 +8,9 @@
 }
 
 .herotrend{
-    display: flex;
-    gap: 2rem;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .5rem;
 
 }
 
@@ -17,6 +18,7 @@
     width: 100%;
     height: 450px;
     border-radius: .3rem;
+    object-fit: cover;
 }
 
 .trend1 p{
@@ -48,6 +50,7 @@
     
     .herotrend {
         gap: 1.5rem;
+        
     }
     
     .herotrend img {
@@ -101,12 +104,14 @@
     }
     
     .herotrend {
-        flex-direction: column;
+        display:grid;
+        grid-template-columns: repeat(1, 1fr);
         gap: 1.5rem;
     }
     
     .herotrend img {
         height: 250px;
+        object-fit: center;
     }
     
     .trend1 p,
