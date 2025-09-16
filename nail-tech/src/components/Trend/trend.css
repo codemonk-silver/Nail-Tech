@@ -33,3 +33,114 @@
     font-size: .8rem;
     color: deeppink;
 }
+
+
+/* Tablet styles (768px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .herosub {
+        padding: 2% 8%;
+    }
+    
+    .herosub h1 {
+        font-size: 1.4rem;
+        margin-bottom: 1.8rem;
+    }
+    
+    .herotrend {
+        gap: 1.5rem;
+    }
+    
+    .herotrend img {
+        height: 380px;
+    }
+    
+    .trend1 p,
+    .trend2 p,
+    .trend3 p {
+        font-size: .75rem;
+    }
+}
+
+/* Mobile Large styles (481px to 768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .herosub {
+        padding: 2% 5%;
+    }
+    
+    .herosub h1 {
+        font-size: 1.3rem;
+        margin-bottom: 1.5rem;
+    }
+    
+    .herotrend {
+        gap: 1rem;
+    }
+    
+    .herotrend img {
+        height: 320px;
+    }
+    
+    .trend1 p,
+    .trend2 p,
+    .trend3 p {
+        font-size: .7rem;
+        margin-top: .5rem;
+    }
+}
+
+/* Mobile Small styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .herosub {
+        padding: 2% 3%;
+    }
+    
+    .herosub h1 {
+        font-size: 1.2rem;
+        margin-bottom: 1.2rem;
+        text-align: center;
+    }
+    
+    .herotrend {
+        flex-direction: column;
+        gap: 1.5rem;
+    }
+    
+    .herotrend img {
+        height: 250px;
+    }
+    
+    .trend1 p,
+    .trend2 p,
+    .trend3 p {
+        font-size: .75rem;
+        margin-top: .3rem;
+        text-align: center;
+    }
+}
+
+/* Extra small mobile styles (up to 375px) */
+@media screen and (max-width: 375px) {
+    .herosub {
+        padding: 2% 4%;
+    }
+    
+    .herosub h1 {
+        font-size: 1.1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .herotrend {
+        gap: 1.2rem;
+    }
+    
+    .herotrend img {
+        height: 220px;
+        border-radius: .25rem;
+    }
+    
+    .trend1 p,
+    .trend2 p,
+    .trend3 p {
+        font-size: .7rem;
+    }
+}

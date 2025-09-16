@@ -29,3 +29,75 @@
     font-size: .8rem;
     color: deeppink;
 }
+
+
+/* Mobile Large styles (481px to 768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .featuresection {
+        padding: 2% 5%;
+    }
+    
+    .featurecard {
+        gap: 1rem;
+        margin-top: 1.5rem;
+    }
+    
+    .featurecard img {
+        height: 320px;
+    }
+    
+    .featurecard1 p,
+    .featurecard2 p,
+    .featurecard3 p {
+        font-size: .7rem;
+        margin-top: .5rem;
+    }
+}
+
+/* Mobile Small styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .featuresection {
+        padding: 2% 3%;
+    }
+    
+    .featurecard {
+        flex-direction: column;
+        gap: 1.5rem;
+        margin-top: 1.2rem;
+    }
+    
+    .featurecard img {
+        height: 250px;
+    }
+    
+    .featurecard1 p,
+    .featurecard2 p,
+    .featurecard3 p {
+        font-size: .75rem;
+        margin-top: .3rem;
+        text-align: center;
+    }
+}
+
+/* Extra small mobile styles (up to 375px) */
+@media screen and (max-width: 375px) {
+    .featuresection {
+        padding: 2% 4%;
+    }
+    
+    .featurecard {
+        gap: 1.2rem;
+        margin-top: 1rem;
+    }
+    
+    .featurecard img {
+        height: 220px;
+        border-radius: .25rem;
+    }
+    
+    .featurecard1 p,
+    .featurecard2 p,
+    .featurecard3 p {
+        font-size: .7rem;
+    }
+}

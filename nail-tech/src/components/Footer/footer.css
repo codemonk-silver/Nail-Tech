@@ -1,0 +1,21 @@
+.footersection{
+    padding: 2% 15%;
+    background: deeppink;
+    color: white;
+}
+
+.footerlink{
+    text-align: center;
+}
+
+.footerlink a{
+    margin-right: 2rem;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.footersection p{
+    text-align: center;
+    margin-top: 2rem;
+}

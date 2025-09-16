@@ -24,3 +24,133 @@
     border: none;
     font-weight: 700;
 }
+
+
+/* Tablet styles (768px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .aboutsection {
+        padding: 2% 10%;
+    }
+    
+    .aboutsection h1 {
+        font-size: 1.4rem;
+    }
+    
+    .aboutsection p {
+        margin-top: 1.8rem;
+        margin-bottom: 1.8rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+    
+    .aboutbtn {
+        padding: .6rem 1.2rem;
+        font-size: 0.95rem;
+    }
+    
+    .aboutbtn:hover {
+        padding: .6rem 1.2rem;
+        font-size: 0.95rem;
+    }
+}
+
+/* Mobile Large styles (481px to 768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .aboutsection {
+        padding: 2% 6%;
+    }
+    
+    .aboutsection h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .aboutsection p {
+        margin-top: 1.5rem;
+        margin-bottom: 1.5rem;
+        font-size: 0.9rem;
+        line-height: 1.7;
+        text-align: center;
+    }
+    
+    .aboutbtn {
+        padding: .7rem 1.3rem;
+        font-size: 0.9rem;
+        display: block;
+        margin: 0 auto;
+        width: fit-content;
+    }
+    
+    .aboutbtn:hover {
+        padding: .7rem 1.3rem;
+        font-size: 0.9rem;
+    }
+}
+
+/* Mobile Small styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .aboutsection {
+        padding: 2% 4%;
+    }
+    
+    .aboutsection h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .aboutsection p {
+        margin-top: 1.2rem;
+        margin-bottom: 1.2rem;
+        font-size: 0.85rem;
+        line-height: 1.8;
+        text-align: center;
+    }
+    
+    .aboutbtn {
+        padding: .8rem 1.5rem;
+        font-size: 0.85rem;
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 200px;
+        text-align: center;
+    }
+    
+    .aboutbtn:hover {
+        padding: .8rem 1.5rem;
+        font-size: 0.85rem;
+    }
+}
+
+/* Extra small mobile styles (up to 375px) */
+@media screen and (max-width: 375px) {
+    .aboutsection {
+        padding: 2% 3%;
+    }
+    
+    .aboutsection h1 {
+        font-size: 1.1rem;
+        margin-bottom: 0.3rem;
+    }
+    
+    .aboutsection p {
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+        font-size: 0.8rem;
+        line-height: 1.9;
+    }
+    
+    .aboutbtn {
+        padding: .75rem 1.4rem;
+        font-size: 0.8rem;
+        border-radius: .25rem;
+        max-width: 180px;
+    }
+    
+    .aboutbtn:hover {
+        padding: .75rem 1.4rem;
+        font-size: 0.8rem;
+        border-radius: .25rem;
+    }
+}

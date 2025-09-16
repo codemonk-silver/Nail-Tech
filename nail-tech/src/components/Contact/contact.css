@@ -58,3 +58,218 @@ background: deeppink;
 color: white;
 font-size: 600;
 }
+
+
+/* Desktop styles (your existing code) */
+.contactsection{
+    padding: 2% 15%;
+}
+
+.contactsection p{
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+label {
+    font-weight: 500;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+    display: block;
+}
+
+input,
+textarea {
+    width: 40%;
+    padding: 12px;
+    border: 1px solid rgb(247, 228, 231);
+    border-radius: 8px;
+    font-size: 0.95rem;
+    background: rgb(247, 232, 235);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+button {
+    background: pink;
+    color: black;
+    border: 0;
+    padding: 12px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.2s;
+    margin-top: 2rem;
+}
+
+button:hover {
+    background: deeppink;
+    color: white;
+    font-weight: 600;
+}
+
+/* Tablet styles (768px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .contactsection {
+        padding: 2% 10%;
+    }
+    
+    .contactsection p {
+        margin-bottom: 1.8rem;
+    }
+    
+    input,
+    textarea {
+        width: 60%;
+    }
+    
+    button {
+        width: 60%;
+        align-self: flex-start;
+    }
+}
+
+/* Mobile Large styles (481px to 768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .contactsection {
+        padding: 2% 6%;
+    }
+    
+    .contactsection h1 {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+    
+    .contactsection p {
+        margin-bottom: 1.5rem;
+        text-align: center;
+    }
+    
+    form {
+        gap: 14px;
+    }
+    
+    label {
+        font-size: 0.85rem;
+        margin-bottom: 3px;
+    }
+    
+    input,
+    textarea {
+        width: 80%;
+        padding: 10px;
+        font-size: 0.9rem;
+        align-self: center;
+    }
+    
+    textarea {
+        min-height: 100px;
+    }
+    
+    button {
+        width: 80%;
+        align-self: center;
+        padding: 11px;
+        font-size: 0.95rem;
+        margin-top: 1.5rem;
+    }
+}
+
+/* Mobile Small styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .contactsection {
+        padding: 2% 4%;
+    }
+    
+    .contactsection h1 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 0.5rem;
+    }
+    
+    .contactsection p {
+        margin-top: 0.8rem;
+        margin-bottom: 1.2rem;
+        text-align: center;
+        font-size: 0.9rem;
+    }
+    
+    form {
+        gap: 12px;
+    }
+    
+    label {
+        font-size: 0.8rem;
+        margin-bottom: 2px;
+        text-align: center;
+    }
+    
+    input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        font-size: 0.85rem;
+        box-sizing: border-box;
+    }
+    
+    textarea {
+        min-height: 90px;
+    }
+    
+    button {
+        width: 100%;
+        padding: 12px;
+        font-size: 0.9rem;
+        margin-top: 1rem;
+    }
+}
+
+/* Extra small mobile styles (up to 375px) */
+@media screen and (max-width: 375px) {
+    .contactsection {
+        padding: 2% 3%;
+    }
+    
+    .contactsection h1 {
+        font-size: 1.1rem;
+    }
+    
+    .contactsection p {
+        font-size: 0.85rem;
+        margin-bottom: 1rem;
+    }
+    
+    form {
+        gap: 10px;
+    }
+    
+    label {
+        font-size: 0.75rem;
+    }
+    
+    input,
+    textarea {
+        padding: 9px;
+        font-size: 0.8rem;
+        border-radius: 6px;
+    }
+    
+    textarea {
+        min-height: 80px;
+    }
+    
+    button {
+        padding: 11px;
+        font-size: 0.85rem;
+        border-radius: 6px;
+    }
+}

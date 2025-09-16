@@ -59,3 +59,147 @@
     border-radius: .3rem;
 }
 
+.herobtn1:hover{
+    background: black;
+    color: deeppink;
+}
+
+.herobtn2:hover{
+    background: black;
+    color: deeppink;
+}
+
+
+/* Tablet styles (768px to 1024px) */
+@media screen and (max-width: 1024px) and (min-width: 769px) {
+    .herosection {
+        padding: 2% 8%;
+    }
+    
+    .heroimg {
+        height: 450px;
+    }
+    
+    .herotitle {
+        top: 2.5rem;
+        left: 3rem;
+        right: 3rem;
+    }
+    
+    .heroheading {
+        font-size: 2.8rem;
+        max-width: 45rem;
+    }
+    
+    .herodes {
+        max-width: 45rem;
+        margin-bottom: 3rem;
+    }
+}
+
+/* Mobile Large styles (481px to 768px) */
+@media screen and (max-width: 768px) and (min-width: 481px) {
+    .herosection {
+        padding: 2% 5%;
+    }
+    
+    .heroimg {
+        height: 400px;
+        border-radius: .6rem;
+    }
+    
+    .herotitle {
+        top: 2rem;
+        left: 2rem;
+        right: 2rem;
+    }
+    
+    .heroheading {
+        font-size: 2.2rem;
+        max-width: 100%;
+        margin-top: .5rem;
+    }
+    
+    .herodes {
+        font-size: .95rem;
+        max-width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    
+    .herobtn1, .herobtn2 {
+        padding: .7rem 1.2rem;
+        font-size: .95rem;
+    }
+    
+    .herobtn1 {
+        margin-right: .8rem;
+    }
+}
+
+/* Mobile Small styles (up to 480px) */
+@media screen and (max-width: 480px) {
+    .herosection {
+        padding: 2% 3%;
+    }
+    
+    .heroimg {
+        height: 350px;
+        border-radius: .5rem;
+    }
+    
+    .herotitle {
+        top: 1.5rem;
+        left: 1.5rem;
+        right: 1.5rem;
+        text-align: left;
+    }
+    
+    .heroheading {
+        font-size: 1.8rem;
+        max-width: 100%;
+        margin-top: .3rem;
+        line-height: 1.2;
+    }
+    
+    .herodes {
+        font-size: .9rem;
+        max-width: 100%;
+        margin-bottom: 2rem;
+        line-height: 1.4;
+    }
+    
+    .herobtn1, .herobtn2 {
+        padding: .6rem 1rem;
+        font-size: .9rem;
+        display: block;
+        width: 100%;
+        margin-bottom: .8rem;
+        margin-right: 0;
+    }
+    
+    .herobtn1 {
+        margin-right: 0;
+    }
+}
+
+/* Extra small mobile styles (up to 375px) */
+@media screen and (max-width: 375px) {
+    .heroimg {
+        height: 300px;
+    }
+    
+    .herotitle {
+        top: 1rem;
+        left: 1rem;
+        right: 1rem;
+    }
+    
+    .heroheading {
+        font-size: 1.5rem;
+    }
+    
+    .herodes {
+        font-size: .85rem;
+        margin-bottom: 1.5rem;
+    }
+}

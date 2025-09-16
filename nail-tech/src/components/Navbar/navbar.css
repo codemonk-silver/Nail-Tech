@@ -11,8 +11,10 @@
 
 .logo{
     font-size: 1.7rem;
+    font-weight: bold;
 }
 
+/* Nav links (desktop) */
 .navlink{
     display: flex;
     gap: 1.3rem;
@@ -24,8 +26,10 @@
     font-size: 1rem;
     font-weight: 500;
     color: black;
+    transition: all 0.3s ease;
 }
 
+/* Book Now button */
 .navbtn{
     background: deeppink;
     color: white;
@@ -42,4 +46,46 @@
 
 .navbtn:hover{
     background: black;
+}
+
+
+/* Hamburger (hidden on desktop) */
+.menu-toggle {
+  display: none;
+  font-size: 1.8rem;
+  cursor: pointer;
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+  .navlink {
+    position: absolute;
+    top: 10vh; /* matches navbar height */
+    right: 0;
+    background: white;
+    flex-direction: column;
+    width: 200px;
+    padding: 1rem;
+    gap: 1rem;
+    display: none; /* hidden by default */
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    z-index: 1;
+    height:100vh ;
+  }
+
+  /* Show menu when "open" */
+  .navlink.open {
+    display: flex;
+  }
+
+  /* Hamburger visible on mobile */
+  .menu-toggle {
+    display: block;
+  }
+
+  /* Adjust button spacing in mobile */
+  .navbtn {
+    margin-left: 0;
+    text-align: center;
+  }
 }
